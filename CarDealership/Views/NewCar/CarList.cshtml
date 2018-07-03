@@ -1,0 +1,9 @@
+<h1>New Car List</h1>
+
+<ul>
+@foreach (var car in Model)
+{
+    <li>@car.GetYear() @car.GetMake() @car.GetModel(), @car.GetColor(), Price: $@car.GetPrice()</li>
+}
+</ul>
+<a href="/newcar/new">Add a new car. Testing</a>
